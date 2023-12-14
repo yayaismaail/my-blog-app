@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration[7.1]
     create_table :posts do |t|
       t.string :title
       t.text :text
-      t.references :user, null: false, index: true, foreign_key: true
+      t.references :author, foreign_key: { to_table: :users }
       t.integer :comments_counter
       t.integer :likes_counter
 
