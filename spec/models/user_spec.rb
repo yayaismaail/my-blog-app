@@ -1,7 +1,7 @@
 require_relative '../rails_helper'
 
 RSpec.describe User, type: :model do
-  subject { User.new(name: 'Uthman', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Programmer', posts_counter: 2) }
+  subject { User.new(name: 'Ismail', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Programmer', posts_counter: 2) }
 
   before { subject.save }
 
@@ -10,8 +10,8 @@ RSpec.describe User, type: :model do
     expect(subject).to_not be_valid
   end
 
-  it 'name should be Uthman' do
-    expect(subject.name).to eql 'Uthman'
+  it 'name should be Ismail' do
+    expect(subject.name).to eql 'Ismail'
   end
 
   it 'photo should be valid' do

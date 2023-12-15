@@ -1,7 +1,7 @@
 require_relative '../rails_helper'
 
 RSpec.describe Comment, type: :model do
-  user = User.create(name: 'Uthman', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Programmer',
+  user = User.create(name: 'Ismail', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Programmer',
                      posts_counter: 0)
   post = Post.create(title: 'My life', text: 'Once upon a time ...', comments_counter: 1, likes_counter: 0,
                      author: user)
