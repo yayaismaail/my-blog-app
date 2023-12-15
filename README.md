@@ -54,8 +54,12 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 - git clone https://github.com/yayaismaail/my-blog-app
-- cd myblog
+- cd my-blog-app
 - code . <!-- If you are using VS Code -->
+
+Open your terminal:
+
+Run: `rails c`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
