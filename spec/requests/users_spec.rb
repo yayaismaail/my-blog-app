@@ -9,9 +9,8 @@ RSpec.describe 'Users', type: :request do
 
     it 'returns http no content when not acceptable' do
       user = User.create(name: 'Example User')
-      get "/users/show", params: { id: user.id }, headers: { 'Accept' => 'application/json' }
+      get '/users/show', params: { id: user.id }, headers: { 'Accept' => 'application/json' }
       expect(response).to have_http_status(:no_content)
     end
-    
   end
 end
